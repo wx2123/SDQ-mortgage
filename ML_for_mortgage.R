@@ -2,8 +2,8 @@
 # 2024/8/17
 
 # import data
-#install.packages("readxl")
-#install.packages("lubridate")
+# install.packages("readxl")
+# install.packages("lubridate")
 
 library(readxl)
 MFLP <- read.csv("C:/Users/xuewu/Downloads/FNMA_MF_Loan_Performance_Data_202312.csv")
