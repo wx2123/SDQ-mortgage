@@ -7,16 +7,17 @@
 
 library(readxl)
 MFLP <- read.csv("C:/Users/xuewu/Downloads/FNMA_MF_Loan_Performance_Data_202312.csv")
+MFLP
 
 head(MFLP)
-tail(data2)
+tail(MFLP)
 summary(MFLP)
 names(MFLP)
 
 library(dplyr)
 MFLP2 <- MFLP
 
-filter(Liquidation.Prepayment.Code != "")
+#filter(Liquidation.Prepayment.Code != "")
 
 # remove duplicates
 MFLP2 %>% distinct(Loan.Number, .keep_all = TRUE)
