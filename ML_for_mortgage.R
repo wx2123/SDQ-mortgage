@@ -33,7 +33,6 @@ MFLP_new <- MFLP2 %>%
   ) 
 summary(MFLP_new)
 
-
 # select variables
 MFLP3 <- MFLP_new %>% 
   select(Loan.Acquisition.UPB3,
