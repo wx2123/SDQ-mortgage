@@ -17,7 +17,7 @@ MFLP
 library(dplyr)
 MFLP2 <- MFLP
 
-#filter(Liquidation.Prepayment.Code != "")
+# filter(MFLP2$Liquidation.Prepayment.Code != "")
 
 # remove duplicates
 MFLP2 %>% distinct(Loan.Number, .keep_all = TRUE)
