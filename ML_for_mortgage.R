@@ -9,10 +9,10 @@ library(readxl)
 MFLP <- read.csv("C:/Users/xuewu/Downloads/FNMA_MF_Loan_Performance_Data_202312.csv")
 MFLP
 
-head(MFLP)
-tail(MFLP)
-summary(MFLP)
-names(MFLP)
+# head(MFLP)
+# tail(MFLP)
+# summary(MFLP)
+# names(MFLP)
 
 library(dplyr)
 MFLP2 <- MFLP
@@ -23,7 +23,7 @@ MFLP2 <- MFLP
 MFLP2 %>% distinct(Loan.Number, .keep_all = TRUE)
 summary(MFLP2)
 
-my_string <- gsub('$', '', Loan.Acquisition.UPB)
+my_string <- gsub('$', '', MFLP2$Loan.Acquisition.UPB)
 
 MFLP_new <- MFLP2 %>% 
   mutate(Loan.Acquisition.UPB2 = gsub('[\\$,]', '', Loan.Acquisition.UPB),
